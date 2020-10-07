@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "org.tuv01",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.3",
+    "applicationType": "monolith",
+    "baseName": "jhipster",
+    "packageName": "org.tuv01",
+    "packageFolder": "org/tuv01",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MTczMDU4ZTdjZWQ1ZTNlNGM3OWVjZjNlMWM3MWY2MDkzZjJmMmNhYmZlYjRiNjY3YWM0NDI2ZTc3ZWE0ZWYyYWM2OTJjZTEyZmU1ODM5MjY3MjVkMTlkYjgzM2FlYTJlODA2MDQzYTM0MTk4ODI0YTRmZjQzNzViM2I5ZGUzMjQ=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1602064235547,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "de", "es"],
+    "blueprints": []
+  }
+}
