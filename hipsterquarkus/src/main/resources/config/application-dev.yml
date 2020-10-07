@@ -61,15 +61,6 @@ spring:
     cache-duration: PT1S # 1 second, see the ISO 8601 standard
   thymeleaf:
     cache: false
-  sleuth:
-    sampler:
-      probability: 1 # report 100% of traces
-  zipkin: # Use the "zipkin" Maven profile to have the Spring Cloud Zipkin dependencies
-    base-url: http://localhost:9411
-    enabled: false
-    locator:
-      discovery:
-        enabled: true
 
 server:
   port: 8080
@@ -89,20 +80,19 @@ jhipster:
         enabled: false
         update-interval: 3
         url: http://localhost:8180/hazelcast-mancenter
-  # CORS is disabled by default on microservices, as you should access them through a gateway.
-  # If you want to enable it, please uncomment the configuration below.
-  # cors:
-  #     allowed-origins: "*"
-  #     allowed-methods: "*"
-  #     allowed-headers: "*"
-  #     exposed-headers: "Authorization,Link,X-Total-Count"
-  #     allow-credentials: true
-  #     max-age: 1800
+  # CORS is only enabled by default with the "dev" profile, so BrowserSync can access the API
+  cors:
+    allowed-origins: '*'
+    allowed-methods: '*'
+    allowed-headers: '*'
+    exposed-headers: 'Authorization,Link,X-Total-Count'
+    allow-credentials: true
+    max-age: 1800
   security:
     authentication:
       jwt:
         # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
-        base64-secret: NDM3N2ZmYTAzYjA4NjU1MDVhODExNGZkMWE2ZDIyNTE0MjQ5YzQ5YTVkMjc0YTI5MDQ3NzBlNGI3MDYzMDIyODNjMzRhNTE2MjAwZWExOTIzZmZlMDhkNWU3NWI0NGY1ZTkyY2RjMTg3ZWZlYmQ0ZGNiNWFkMDdhOTVjMzNjZGI=
+        base64-secret: Yjc1MWI1YjEwNDQxMGYwOGVmMWMyMGNlOGRiNWVlYmIzYzYwZjYyNGIxMGM1N2U4MWFlMGUxZmI2NzQ2ODllODQ2NGE5MDUwYWM2ODUzMDhkMDBkM2MyOTQ1NDIxODUzMmMzNzUwNmEyN2I2M2M5MjVmMThmZDI3ZWFiODQxYTk=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000
