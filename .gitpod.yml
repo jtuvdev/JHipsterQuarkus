@@ -11,7 +11,9 @@ ports:
     onOpen: open-preview
   - port: 8081
     onOpen: ignore
-  - port: 9000-9999
+  - port: 9000
+    onOpen: open-preview
+  -port: 9001-9999
     onOpen: ignore
 
 github:
