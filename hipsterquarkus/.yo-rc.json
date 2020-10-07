@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "org.tuv01",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.3",
+    "applicationType": "microservice",
+    "baseName": "hipsterquarkus",
+    "packageName": "org.tuv01",
+    "packageFolder": "org/tuv01",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mariadb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NDM3N2ZmYTAzYjA4NjU1MDVhODExNGZkMWE2ZDIyNTE0MjQ5YzQ5YTVkMjc0YTI5MDQ3NzBlNGI3MDYzMDIyODNjMzRhNTE2MjAwZWExOTIzZmZlMDhkNWU3NWI0NGY1ZTkyY2RjMTg3ZWZlYmQ0ZGNiNWFkMDdhOTVjMzNjZGI=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1602057953570,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": ["en"],
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
